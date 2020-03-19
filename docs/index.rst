@@ -6,22 +6,22 @@
 Welcome to Ichno's documentation!
 =================================
 
-.. image:: images/logo_ichno.png
+.. image:: images/logo_ichno-02.png
    :align: center
    :width: 20em
 
-Ichno é um serviço para facilitar o rastreamento de alterações e armazenamento de histórico de objetos ou registros de banco de dados.
+Ichno is a solution, provided as a Sass model, to facilitate tracking changes and the history storage of object instances or database entries.
 
-Basta enviar a instância do objeto, em seu estado atual, que as diferenças serão detectadas automaticamente e disponibilizadas para consulta.
+You only need to send the instance of the object, with its current state, and the changes will be automatically detected and will be available for later searches.
 
-A solução proverá para você:
+It will provide the following features:
 
-
-| **Facilidade no rastreio de alterações**
+| **Track the changes easily**
+| Centralized history logic. Save your team time and computational resources with history feature implementation.
 | Lógica centralizada de histórico. Economize tempo da equipe técnica e de recursos computacionais com a implementação de funcionalidades de histórico.
 
-| **Consulta fácil a versões e alterações**
-| Através de uma interface simples, ou com a utilização de uma API, pesquise alterações efetuadas em instâncias e registros do banco de dados.
+| **Search for versions and changes**
+| Through a simple interface, or an API to integrate, search for changes in instances of database records.
 
 .. toctree::
    :caption: USING ICHNO

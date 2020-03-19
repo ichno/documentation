@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Ichno'
-copyright = u'2019, Ichno Solutions'
+copyright = u'2020, Ichno Solutions'
 author = u'Ichno Solutions'
 
 # The short X.Y version
@@ -80,7 +80,9 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'logo_only': True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -96,6 +98,10 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+
+html_logo = 'images/logo_ichno-02-white.svg'
+
+html_css_files = ['css/custom.css']
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
