@@ -28,18 +28,19 @@ It will provide the following features:
    :hidden: 
    :maxdepth: 2
 
-   using-ichno
+   using-ichno/using-ichno
+   using-ichno/tips
 
 .. toctree::
    :caption: DASHBOARD
    :hidden: 
    :maxdepth: 2
 
-   dashboard
+   dashboard/discovery-view
 
 .. toctree::
    :caption: ADMIN
    :hidden: 
    :maxdepth: 2
 
-   admin
+   admin/admin
