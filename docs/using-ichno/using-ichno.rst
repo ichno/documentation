@@ -116,7 +116,7 @@ After have your instance versions registered, it is possible to query changes us
       - | ``integer``
       - **No**
       - Number of register to skip on this query. Useful to pagination.
-    * - start
+    * - length
       - | ``integer``
       - **No**
       - Number of register that must be returned. Useful to pagination.
