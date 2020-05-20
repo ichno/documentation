@@ -113,10 +113,10 @@ After have your instance versions registered, it is possible to query changes us
      - Required
      - Description
    * - keys
-     - (Key Value List)
+     - | ``[string]: string | number | boolean``
+       | (Key Value List)
      - **No**
-     - Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
-
+     - | Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
 
 Query by properties
 ^^^^^^^^^^^^^^^^^^^
