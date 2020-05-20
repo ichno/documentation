@@ -125,7 +125,6 @@ Ichno also allow you to query by properties, allowing you to query changes made 
 
 .. list-table::
     :widths: 15 15 15 55
-    :width: 100
     :header-rows: 1
 
     * - Field
