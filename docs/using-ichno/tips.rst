@@ -12,7 +12,6 @@ For example, if you have a subset of users and another subset of products, the c
 
 .. list-table::
     :widths: 50 50
-    :width: 100
     :header-rows: 1
 
     * - User 1
@@ -48,7 +47,6 @@ For example, if you have a subset of users and another subset of products, the c
 
 .. list-table::
     :widths: 50 50
-    :width: 100
     :header-rows: 1
 
     * - Product 1

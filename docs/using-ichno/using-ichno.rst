@@ -38,7 +38,6 @@ More than only your object instance, you can send other fields to store aditiona
 
 .. list-table::
     :widths: 15 15 15 55
-    :width: 100
     :header-rows: 1
 
     * - Field
@@ -78,32 +77,6 @@ Quering Changes
 
 After have your instance versions registered, it is possible to query changes using the following parameters:
 
-+------------+------------+-----------+
-| Header 1   | Header 2   | Header 3  |
-+============+============+===========+
-| body row 1 | column 2   | column 3  |
-+------------+------------+-----------+
-| body row 2 | Cells may span columns.|
-+------------+------------+-----------+
-| body row 3 | Cells may  | - Cells   |
-+------------+ span rows. | - contain |
-| body row 4 |            | - blocks. |
-+------------+------------+-----------+
-
-.. list-table:: Title
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - Heading row 1, column 1
-     - Heading row 1, column 2
-     - Heading row 1, column 3
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-
 .. list-table::
    :widths: 15 15 15 55
    :header-rows: 1
@@ -117,7 +90,34 @@ After have your instance versions registered, it is possible to query changes us
        | (Key Value List)
      - **No**
      - | Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
-
+   * - startDate
+     - | ``date``
+       | (yyyy-MM-ddThh:mm:ss)
+     - **No**
+     - | Start date for date range.
+   * - endDate
+     - | ``date``
+       | (yyyy-MM-ddThh:mm:ss)
+     - **No**
+     - | End date for date range.
+   * - labels
+     - | ``[string]: string | number | boolean``
+       | (Key Value List)
+     - **No**
+     - | Change labels.
+   * - properties
+     - | ``object``
+     - **No**
+     - Filter changes by properties
+   * - start
+     - | ``integer``
+     - **No**
+     - Number of register to skip on this query. Useful to pagination.
+   * - length
+     - | ``integer``
+     - **No**
+     - Number of register that must be returned. Useful to pagination.
+     
 Query by properties
 ^^^^^^^^^^^^^^^^^^^
 
