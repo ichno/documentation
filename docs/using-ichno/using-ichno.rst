@@ -106,7 +106,6 @@ After have your instance versions registered, it is possible to query changes us
 
 .. list-table::
    :widths: 15 15 15 55
-   :width: 100
    :header-rows: 1
 
    * - Field
