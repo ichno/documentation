@@ -114,37 +114,10 @@ After have your instance versions registered, it is possible to query changes us
      - Required
      - Description
    * - keys
-     - | ``[string]: string | number | boolean``
-       | (Key Value List)
+     - ``[string]: string | number | boolean``
+       (Key Value List)
      - **No**
-     - | Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
-   * - startDate
-     - | ``date``
-       | (yyyy-MM-ddThh:mm:ss)
-     - **No**
-     - | Start date for date range.
-   * - endDate
-     - | ``date``
-       | (yyyy-MM-ddThh:mm:ss)
-     - **No**
-     - | End date for date range.
-   * - labels
-     - | ``[string]: string | number | boolean``
-       | (Key Value List)
-     - **No**
-     - | Change labels.
-   * - properties
-     - | ``object``
-     - **No**
-     - Filter changes by properties
-   * - start
-     - | ``integer``
-     - **No**
-     - Number of register to skip on this query. Useful to pagination.
-   * - length
-     - | ``integer``
-     - **No**
-     - Number of register that must be returned. Useful to pagination.
+     - Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
 
 
 Query by properties
