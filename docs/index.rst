@@ -24,12 +24,23 @@ It will provide the following features:
 | Through a simple interface, or an API to integrate, search for changes in instances of database records.
 
 .. toctree::
-   :caption: USING ICHNO
+   :caption: GENERAL VIEW
    :hidden: 
    :maxdepth: 2
 
    using-ichno/using-ichno
    using-ichno/tips
+
+.. toctree::
+   :caption: API
+   :hidden: 
+   :maxdepth: 2
+
+   api/open-api-specification
+   api/api-key
+   api/posting-versions
+   api/querying-changes
+   api/aggregations
 
 .. toctree::
    :caption: DASHBOARD
@@ -44,3 +55,10 @@ It will provide the following features:
    :maxdepth: 2
 
    admin/admin
+
+.. toctree::
+   :caption: OTHER TOPICS
+   :hidden: 
+   :maxdepth: 1
+
+   general/date-format-pattern
