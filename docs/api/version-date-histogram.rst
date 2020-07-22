@@ -11,14 +11,14 @@ Parameters
    :widths: 15 15 15 55
    :header-rows: 1
 
-   * - Field
+   * - Name
      - Type
      - Required
      - Description
    * - format
      - ``string``
      - **No**
-     - Se avaiable formats in :ref:`date-formar-pattern` 
+     - Se avaiable formats in :ref:`date-format-pattern`
    * - interval
      - ``string``
      - **No**
@@ -55,7 +55,7 @@ Request
 Response
 --------
 
-.. code-block:: language
+.. code-block:: javascript
 
   {
     "aggregations": {

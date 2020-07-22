@@ -1,4 +1,4 @@
-.. _date-formar-pattern:
+.. _date-format-pattern:
 
 ===================
 Date Format/Pattern

@@ -9,17 +9,19 @@ Structuring Aggregations
 The following snippet captures the basic structure of aggregations:
 
 .. code-block:: javascript
-
-    "aggregations" : {
-        "<aggregation_name>" : {
-            "aggregationTarget": "<aggregation_target>",
-            "aggregationType: "<aggregation_type>"
-            [,"parameters" : {
-                ["<parameter_1>" : { ... } ]*
-            } ]?
-            [,"aggregations" : { [<sub_aggregation>]+ } ]?
+    
+    {
+        "aggregations" : {
+            "<aggregation_name>" : {
+                "aggregationTarget": "<aggregation_target>",
+                "aggregationType: "<aggregation_type>"
+                [,"parameters" : {
+                    ["<parameter_1>" : { ... } ]*
+                } ]?
+                [,"aggregations" : { [<sub_aggregation>]+ } ]?
+            }
+            [,"<aggregation_name_2>" : { ... } ]*
         }
-        [,"<aggregation_name_2>" : { ... } ]*
     }
 
 
@@ -32,3 +34,5 @@ There are many different types of aggregations, each with its own purpose and ou
    :maxdepth: 1
 
    version-date-histogram.rst
+   property-name.rst
+   label-value.rst

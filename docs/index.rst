@@ -59,6 +59,8 @@ It will provide the following features:
 .. toctree::
    :caption: OTHER TOPICS
    :hidden: 
-   :maxdepth: 1
+   :maxdepth: 0
 
    general/date-format-pattern
+   general/jsonpath
+   general/regex
