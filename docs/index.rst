@@ -10,30 +10,28 @@ Welcome to Ichno's documentation!
    :align: center
    :width: 20em
 
-Ichno is a solution, provided as a Sass model, to facilitate tracking changes and the history storage of object instances or database entries.
+Ichno is a SaaS solution designed to simplify tracking changes and storing the history of object instances or database entries.
 
-You only need to send the instance of the object, with its current state, and the changes will be automatically detected and will be available for later searches.
+Simply send the instance of the object with its current state, and Ichno will automatically detect changes, making them available for future queries.
 
-It will provide the following features:
+Key features include:
 
-| **Track the changes easily**
-| Centralized history logic. Save your team time and computational resources with history feature implementation.
-| Lógica centralizada de histórico. Economize tempo da equipe técnica e de recursos computacionais com a implementação de funcionalidades de histórico.
+| **Easily track changes**
+| Centralize your history logic and save time and resources by offloading change tracking and history implementation to Ichno.
 
 | **Search for versions and changes**
-| Through a simple interface, or an API to integrate, search for changes in instances of database records.
+| Use a simple interface or API to search for changes in object instances or database records efficiently.
 
 .. toctree::
    :caption: GENERAL VIEW
-   :hidden: 
+   :hidden:
    :maxdepth: 2
 
    using-ichno/using-ichno
-   using-ichno/tips
 
 .. toctree::
    :caption: API
-   :hidden: 
+   :hidden:
    :maxdepth: 2
 
    api/open-api-specification
@@ -44,21 +42,21 @@ It will provide the following features:
 
 .. toctree::
    :caption: DASHBOARD
-   :hidden: 
+   :hidden:
    :maxdepth: 2
 
    dashboard/discovery-view
 
 .. toctree::
    :caption: ADMIN
-   :hidden: 
+   :hidden:
    :maxdepth: 2
 
    admin/admin
 
 .. toctree::
    :caption: OTHER TOPICS
-   :hidden: 
+   :hidden:
    :maxdepth: 0
 
    general/date-format-pattern
