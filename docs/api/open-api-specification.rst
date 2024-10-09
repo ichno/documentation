@@ -6,4 +6,4 @@ Please note that an API Key is required for communication, even when using the S
 
 .. |swagger| raw:: html
 
-   <a href="https://panel-hml.ichno.io/api" target="_blank">here</a>
+   <a href="https://panel.ichno.io/api" target="_blank">here</a>
