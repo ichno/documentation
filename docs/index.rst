@@ -38,14 +38,6 @@ Key features include:
    api/api-key
    api/posting-versions
    api/querying-changes
-   api/aggregations
-
-.. toctree::
-   :caption: DASHBOARD
-   :hidden:
-   :maxdepth: 2
-
-   dashboard/discovery-view
 
 .. toctree::
    :caption: ADMIN
@@ -53,12 +45,3 @@ Key features include:
    :maxdepth: 2
 
    admin/admin
-
-.. toctree::
-   :caption: OTHER TOPICS
-   :hidden:
-   :maxdepth: 0
-
-   general/date-format-pattern
-   general/jsonpath
-   general/regex

@@ -1,9 +1,9 @@
 Open API Specification
 ======================
 
-Ichno provides an API to be used to integrate easily with. The swagger definition can be accessed |swagger|.
-Remember that you need an API Key to communicate, even using the Swagger Interface.
+Ichno provides an API that enables seamless integration. You can access the Swagger definition |swagger|.
+Please note that an API Key is required for communication, even when using the Swagger interface. You can get your API Key by following the instructions at `Api Keys <../admin/admin.html#api-keys>`__.
 
 .. |swagger| raw:: html
 
-   <a href="https://api.ichno.io/swagger/index.html" target="_blank">here</a>
+   <a href="https://panel-hml.ichno.io/api" target="_blank">here</a>

@@ -1,88 +1,27 @@
 Quering Changes
 ---------------
 
-After have your instance versions registered, it is possible to query changes using the following parameters:
+All versions can be queried using the ``/version`` endpoint. This endpoint allows you to query changes made on instances registered in Ichno.
+
+It is possible to query changes using the following parameters:
 
 .. list-table::
-   :widths: 15 15 15 55
+   :widths: 20 20 60
    :header-rows: 1
 
-   * - Field
-     - Type
-     - Required
+   * - Parameter
+     - Sample
      - Description
-   * - keys
-     - | ``[string]: string | number | boolean``
-       | (Key Value List)
-     - **No**
-     - | Unique identifier of the instance in the clients system. Use the same values used to register the instance. If you are using composite keys, its possible to send all keys or a subset of these keys.
-   * - startDate
-     - | ``date``
-       | (yyyy-MM-ddThh:mm:ss)
-     - **No**
-     - | Start date for date range.
-   * - endDate
-     - | ``date``
-       | (yyyy-MM-ddThh:mm:ss)
-     - **No**
-     - | End date for date range.
+   * - type
+     - ``[GET] /version?type=user`` 
+     - | The type of the instance being registered. 
+       | This helps to categorize different instance types (e.g., `user`, `product`) and prevents conflicts between instances with the same key in different types. You can send the table or model name, for example.
+   * - key
+     - ``[GET] /version?key=userId:12345&key=companyId:54321`` 
+     - The key name and key value of the instance, separated by ":". Specify one or more keys to retrieve changes related to specific entities or records. More than one key can be informed, allowing composite keys.
    * - labels
-     - | ``[string]: string | number | boolean``
-       | (Key Value List)
-     - **No**
-     - | Change labels.
-   * - properties
-     - | ``object``
-     - **No**
-     - Filter changes by properties
-   * - start
-     - | ``integer``
-     - **No**
-     - Number of register to skip on this query. Useful to pagination.
-   * - length
-     - | ``integer``
-     - **No**
-     - Number of register that must be returned. Useful to pagination.
-     
-Query by properties
-^^^^^^^^^^^^^^^^^^^
-
-Ichno also allow you to query by properties, allowing you to query changes made on specific property. Properties query parameters are send through an object in the property ``properties`` on change query endpoint:
-
-.. list-table::
-    :widths: 15 15 15 55
-    :header-rows: 1
-
-    * - Field
-      - Type
-      - Required
-      - Description
-    * - path
-      - | ``[string | number | boolean]``
-        | (array)
-      - **No**
-      - | Property path. 
-        | For example, if you are registering version for the following object:
-          
-          ..  code-block:: javascript
-
-              {
-                name: 'John Hanson',
-                address: {
-                  street: 'The Great, Ave',
-                  number: 153
-                }
-              }
-          
-        | You can query the name changes using the following array as parameter:
-        | ``['name']``
-        | Or this one to filter by street name changes:
-        | ``['address', 'street']``
-    * - newValue
-      - | ``string | number | boolean``
-      - **No**
-      - | Filter properties by the new value.
-    * - oldValue
-      - | ``string | number | boolean``
-      - **No**
-      - | Filter properties by the old value.
+     - ``[GET] /version?label=clusterId:9876&label=priority:high`` 
+     - The label name and label value of the instance, separated by ":". More than one label can be informed.
+   * - change
+     - ``[GET] /version?change=$.status:inactive``
+     - Filter changes by the property path. The propertyValue represents the new value of the property. Use this filter to retrieve changes where the property value was modified to the specified new value.
